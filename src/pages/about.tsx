@@ -3,7 +3,7 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import React,{useEffect, useRef} from 'react'
 import Image from 'next/image'
-import DansoImage from '../public/images/profile/danso.svg';
+import DansoImage from '../../public/images/profile/danso.svg';
 import {useMotionValue,useSpring,useInView} from 'framer-motion';
 import Skills from '@/components/Skills'
 
@@ -39,7 +39,7 @@ function about() {
     <meta name="description" content='about page'/>
    </Head>
 
-   <main className='flex w-full flex-col items-center justify-center'>
+   <main className='flex w-full flex-col items-center justify-center px-20'>
     <Layout className='pt-16'>
       <AnimatedText className='mb-16 px-32 text-2xl'text="Passion Fuels Purpose!"/>
       <div className='grid w-full grid-cols-8 gap-16 '>
@@ -63,21 +63,21 @@ function about() {
               <span className='inline-block text-7xl font-bold'>
                 <AnimatedNumbers value="50"/>+
               </span>
-              <h2 className='text-xl font-medium capitalize text-dark/75'>Satisfied Clients</h2>
+              <h2 className='text-lg font-medium capitalize text-dark/75'>Satisfied Clients</h2>
             </div>
 
             <div className='flex flex-col items-end justify-center'>
             <span className='inline-block text-7xl font-bold'>
             <AnimatedNumbers value="40+"/>+
               </span>
-              <h2 className='text-xl font-medium capitalize text-dark/75'>projects completed</h2>
+              <h2 className='text-lg font-medium capitalize text-dark/75'>projects completed</h2>
             </div>
 
             <div className='flex flex-col items-end justify-center'>
             <span className='inline-block text-7xl font-bold'>
             <AnimatedNumbers value="4"/>+
               </span>
-              <h2 className='text-xl font-medium capitalize text-dark/75'>years of experience</h2>
+              <h2 className=' text-lg font-medium capitalize text-dark/75 '>years of experience</h2>
             </div>
 
          </div>

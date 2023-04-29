@@ -20,3 +20,10 @@ export interface IconProps{
     className?:string | null | undefined;
     set:[string]
 }
+
+export interface SkillProps{
+    text:string;
+    x?:string | number;
+    y?:string | number;
+
+}
