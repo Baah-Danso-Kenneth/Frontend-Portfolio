@@ -20,7 +20,7 @@ function Skills() {
     <>
       <h2 className='font-bold text-8xl mt-20 w-full text-center'>Skills</h2>
      <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight'>
-         {/* <motion.div className='flex items-center justify-center  p-8 bg-dark shadow-dark text-white rounded-full' whileHover={{scale:1.05}}>Web</motion.div> */}
+         <motion.div className='flex absolute items-center justify-center  p-8 bg-dark shadow-dark text-white rounded-full' whileHover={{scale:1.05}}>Web</motion.div>
 
          <Skill text="HTML" x='-10vw' y='2vw'/>
          <Skill text="CSS" x='8vw' y='-10vw'/>

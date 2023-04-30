@@ -6,6 +6,7 @@ import Image from 'next/image'
 import DansoImage from '../../public/images/profile/danso.svg';
 import {useMotionValue,useSpring,useInView} from 'framer-motion';
 import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
 
 const AnimatedNumbers=({value}:any)=>{
   const ref=useRef(null);
@@ -39,7 +40,7 @@ function about() {
     <meta name="description" content='about page'/>
    </Head>
 
-   <main className='flex w-full flex-col items-center justify-center px-20'>
+   <main className='flex w-full flex-col items-center justify-center'>
     <Layout className='pt-16'>
       <AnimatedText className='mb-16 px-32 text-2xl'text="Passion Fuels Purpose!"/>
       <div className='grid w-full grid-cols-8 gap-16 '>
@@ -83,8 +84,9 @@ function about() {
          </div>
 
       </div>
-    </Layout>
     <Skills/>
+    <Experience/>
+    </Layout>
    </main>
    </>
   )
